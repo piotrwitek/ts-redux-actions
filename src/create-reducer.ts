@@ -63,7 +63,7 @@ type GetAction<
   TType extends TAction['type']
 > = TAction extends Action<TType> ? TAction : never;
 
-type InitialHandler<TState, TRootAction extends Action> = {
+export type InitialHandler<TState, TRootAction extends Action> = {
   [P in TRootAction['type']]?: (
     state: TState,
     action: GetAction<TRootAction, P>
