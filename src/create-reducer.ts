@@ -6,7 +6,7 @@ import {
 } from './utils/validation';
 import { Reducer, Action, Types } from './type-helpers';
 
-type HandleActionChainApi<
+export type HandleActionChainApi<
   TState,
   TInputAction extends Action,
   TRootAction extends Action
@@ -32,7 +32,7 @@ type HandleActionChainApi<
       >;
     };
 
-type HandleTypeChainApi<
+export type HandleTypeChainApi<
   TState,
   TInputAction extends Action,
   TRootAction extends Action
