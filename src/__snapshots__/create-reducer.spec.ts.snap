@@ -8,7 +8,11 @@ exports[`Type refinement checks action (type) should match snapshot 3`] = `"T.Em
 
 exports[`Type refinement checks action (type) should match snapshot 4`] = `"T.EmptyAction<\\"foo4\\">"`;
 
-exports[`Type refinement checks reducer.handlers (type) should match snapshot 1`] = `"Record<\\"foo1\\" | \\"foo2\\" | \\"foo3\\" | \\"foo4\\", (state: { foo: string | null; }, action: T.PayloadAction<\\"foo1\\", string> | T.PayloadAction<\\"foo2\\", string> | T.EmptyAction<\\"foo3\\"> | T.EmptyAction<\\"foo4\\">) => { foo: string | null; }>"`;
+exports[`Type refinement checks action (type) should match snapshot 5`] = `"T.EmptyAction<\\"foo5\\">"`;
+
+exports[`Type refinement checks reducer.handlers (type) should match snapshot 1`] = `"Record<\\"foo1\\" | \\"foo2\\" | \\"foo3\\" | \\"foo4\\" | \\"foo5\\", (state: { foo: string | null; }, action: T.PayloadAction<\\"foo1\\", string> | T.PayloadAction<\\"foo2\\", string> | T.EmptyAction<\\"foo3\\"> | T.EmptyAction<\\"foo4\\"> | T.EmptyAction<\\"foo5\\">) => { foo: string | null; }>"`;
+
+exports[`Type refinement checks reducerDefaultResult (type) should match snapshot 1`] = `"{ foo: string | null; }"`;
 
 exports[`Type refinement checks reducerResult (type) should match snapshot 1`] = `"{ foo: string | null; }"`;
 
@@ -26,18 +30,24 @@ exports[`Type refinement checks state (type) should match snapshot 3`] = `"{ foo
 
 exports[`Type refinement checks state (type) should match snapshot 4`] = `"{ foo: string | null; }"`;
 
-exports[`With Action Creators counterReducer1.handlers (type) should match snapshot 1`] = `"Record<\\"ADD\\" | \\"INCREMENT\\", (state: number, action: T.PayloadAction<\\"ADD\\", number> | T.EmptyAction<\\"INCREMENT\\"> | T.EmptyAction<\\"DECREMENT\\">) => number>"`;
+exports[`Type refinement checks state (type) should match snapshot 5`] = `"{ foo: string | null; }"`;
 
-exports[`With Action Creators counterReducer2.handlers (type) should match snapshot 1`] = `"Record<\\"ADD\\" | \\"INCREMENT\\", (state: number, action: T.PayloadAction<\\"ADD\\", number> | T.EmptyAction<\\"INCREMENT\\"> | T.EmptyAction<\\"DECREMENT\\">) => number>"`;
+exports[`With Action Creators counterReducer1.handlers (type) should match snapshot 1`] = `"Record<\\"ADD\\" | \\"INCREMENT\\", (state: number, action: T.PayloadAction<\\"ADD\\", number> | T.EmptyAction<\\"INCREMENT\\"> | T.EmptyAction<\\"DECREMENT\\"> | T.EmptyAction<\\"@@redux/INIT.1\\">) => number>"`;
 
-exports[`With Action Creators counterReducer3.handlers (type) should match snapshot 1`] = `"Record<\\"ADD\\", (state: number, action: T.PayloadAction<\\"ADD\\", number> | T.EmptyAction<\\"INCREMENT\\"> | T.EmptyAction<\\"DECREMENT\\">) => number>"`;
+exports[`With Action Creators counterReducer2.handlers (type) should match snapshot 1`] = `"Record<\\"ADD\\" | \\"INCREMENT\\", (state: number, action: T.PayloadAction<\\"ADD\\", number> | T.EmptyAction<\\"INCREMENT\\"> | T.EmptyAction<\\"DECREMENT\\"> | T.EmptyAction<\\"@@redux/INIT.1\\">) => number>"`;
 
-exports[`With Action Creators counterReducer4.handlers (type) should match snapshot 1`] = `"Record<\\"INCREMENT\\", (state: number, action: T.PayloadAction<\\"ADD\\", number> | T.EmptyAction<\\"INCREMENT\\"> | T.EmptyAction<\\"DECREMENT\\">) => number>"`;
+exports[`With Action Creators counterReducer3.handlers (type) should match snapshot 1`] = `"Record<\\"ADD\\", (state: number, action: T.PayloadAction<\\"ADD\\", number> | T.EmptyAction<\\"INCREMENT\\"> | T.EmptyAction<\\"DECREMENT\\"> | T.EmptyAction<\\"@@redux/INIT.1\\">) => number>"`;
 
-exports[`With Action Types counterReducer1.handlers (type) should match snapshot 1`] = `"Record<\\"ADD\\" | \\"INCREMENT\\", (state: number, action: T.PayloadAction<\\"ADD\\", number> | T.EmptyAction<\\"INCREMENT\\"> | T.EmptyAction<\\"DECREMENT\\">) => number>"`;
+exports[`With Action Creators counterReducer4.handlers (type) should match snapshot 1`] = `"Record<\\"INCREMENT\\", (state: number, action: T.PayloadAction<\\"ADD\\", number> | T.EmptyAction<\\"INCREMENT\\"> | T.EmptyAction<\\"DECREMENT\\"> | T.EmptyAction<\\"@@redux/INIT.1\\">) => number>"`;
 
-exports[`With Action Types counterReducer2.handlers (type) should match snapshot 1`] = `"Record<\\"ADD\\" | \\"INCREMENT\\", (state: number, action: T.PayloadAction<\\"ADD\\", number> | T.EmptyAction<\\"INCREMENT\\"> | T.EmptyAction<\\"DECREMENT\\">) => number>"`;
+exports[`With Action Creators counterReducer5.handlers (type) should match snapshot 1`] = `"Record<\\"ADD\\" | \\"INCREMENT\\" | \\"DECREMENT\\" | \\"@@redux/INIT.1\\", (state: number, action: T.PayloadAction<\\"ADD\\", number> | T.EmptyAction<\\"INCREMENT\\"> | T.EmptyAction<\\"DECREMENT\\"> | T.EmptyAction<\\"@@redux/INIT.1\\">) => number>"`;
 
-exports[`With Action Types counterReducer3.handlers (type) should match snapshot 1`] = `"Record<\\"ADD\\", (state: number, action: T.PayloadAction<\\"ADD\\", number> | T.EmptyAction<\\"INCREMENT\\"> | T.EmptyAction<\\"DECREMENT\\">) => number>"`;
+exports[`With Action Types counterReducer1.handlers (type) should match snapshot 1`] = `"Record<\\"ADD\\" | \\"INCREMENT\\", (state: number, action: T.PayloadAction<\\"ADD\\", number> | T.EmptyAction<\\"INCREMENT\\"> | T.EmptyAction<\\"DECREMENT\\"> | T.EmptyAction<\\"@@redux/INIT.1\\">) => number>"`;
 
-exports[`With Action Types counterReducer4.handlers (type) should match snapshot 1`] = `"Record<\\"INCREMENT\\", (state: number, action: T.PayloadAction<\\"ADD\\", number> | T.EmptyAction<\\"INCREMENT\\"> | T.EmptyAction<\\"DECREMENT\\">) => number>"`;
+exports[`With Action Types counterReducer2.handlers (type) should match snapshot 1`] = `"Record<\\"ADD\\" | \\"INCREMENT\\", (state: number, action: T.PayloadAction<\\"ADD\\", number> | T.EmptyAction<\\"INCREMENT\\"> | T.EmptyAction<\\"DECREMENT\\"> | T.EmptyAction<\\"@@redux/INIT.1\\">) => number>"`;
+
+exports[`With Action Types counterReducer3.handlers (type) should match snapshot 1`] = `"Record<\\"ADD\\", (state: number, action: T.PayloadAction<\\"ADD\\", number> | T.EmptyAction<\\"INCREMENT\\"> | T.EmptyAction<\\"DECREMENT\\"> | T.EmptyAction<\\"@@redux/INIT.1\\">) => number>"`;
+
+exports[`With Action Types counterReducer4.handlers (type) should match snapshot 1`] = `"Record<\\"INCREMENT\\", (state: number, action: T.PayloadAction<\\"ADD\\", number> | T.EmptyAction<\\"INCREMENT\\"> | T.EmptyAction<\\"DECREMENT\\"> | T.EmptyAction<\\"@@redux/INIT.1\\">) => number>"`;
+
+exports[`With Action Types counterReducer5.handlers (type) should match snapshot 1`] = `"Record<\\"ADD\\" | \\"INCREMENT\\" | \\"DECREMENT\\" | \\"@@redux/INIT.1\\", (state: number, action: T.PayloadAction<\\"ADD\\", number> | T.EmptyAction<\\"INCREMENT\\"> | T.EmptyAction<\\"DECREMENT\\"> | T.EmptyAction<\\"@@redux/INIT.1\\">) => number>"`;
