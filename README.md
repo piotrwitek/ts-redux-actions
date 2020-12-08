@@ -650,7 +650,7 @@ createCustomAction(type, type => {
 ```
 
 Examples:
-[> Advanced Usage Examples](src/create-action-with-type.spec.ts)
+[> Advanced Usage Examples](src/create-custom-action.spec.ts)
 
 ```ts
 import { createCustomAction } from 'typesafe-actions';
